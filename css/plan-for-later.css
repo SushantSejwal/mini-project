@@ -1,0 +1,139 @@
+.plan-for-later {
+    padding: 20px;
+    margin: 40px 0px;
+}
+.plan-for-later .heading h1{
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.plan-for-later .card {
+    background:#398B99;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 20px;
+   
+}
+
+.plan-for-later .card .heading {
+    font-size: 30px;
+    font-weight: 600;
+    color: #FBF4E1;
+    line-height: 120%;
+}
+
+
+
+.plan-for-later .date-time-wrapper {
+    margin: 30px 0px 10px 0px;
+}
+
+.plan-for-later .date-time-wrapper .heading {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FBF4E1;
+    padding: 10px 0px;
+}
+
+.plan-for-later .date-time {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    justify-items: center;
+}
+
+.plan-for-later .date-time .date-time-input {
+    font-size: 18px;
+    padding: 15px 20px;
+    margin: 5px 0px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background: #FBF4E1;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.plan-for-later .date-time .date-time-input::placeholder {
+    color: #100C06;
+}
+
+.plan-for-later .date-time .label-for-date-time {
+    color: #FBF4E1;
+    font-size: 14px;
+}
+
+/* BUTTON */
+.plan-for-later .next button {
+    width: 100%;
+    background: #FAB766;
+    color: #363633;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px 20px;
+    margin: 10px 0px;    
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+}
+.plan-for-later .next button:hover {
+    background: #e2a963;
+}
+.plan-for-later .next button:active {
+    background: #c99350;
+}
+
+
+/* Benefits */
+
+.benefits {
+    margin: 20px 0px;
+    border: 1px solid #E9CA9A;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 20px;
+}
+
+.benefits .heading p {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.benefits .benefit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefits .benefit .icon {
+    padding: 20px;
+    font-size: 18px;
+}
+.benefits .benefit .detail {
+    padding: 10px 0px;
+    border-bottom: 1px solid #EBDBB2;
+}
+
+.benefits .benefit:last-child .detail{
+    border-bottom: none;
+}
