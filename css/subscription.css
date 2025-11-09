@@ -1,0 +1,141 @@
+#subscription-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+    transition: opacity .2s ease;
+    overflow: auto;
+    display: none;
+    -webkit-transition: opacity .2s ease;
+    -moz-transition: opacity .2s ease;
+    -ms-transition: opacity .2s ease;
+    -o-transition: opacity .2s ease;
+}
+
+#subscription-overlay.shown {
+    pointer-events: auto;
+    display: block;
+}
+
+/* #subscription-overlay.hidden {
+    display: block;
+} */
+
+#subscription-overlay .sub-header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 2;
+}
+
+#subscription-overlay .sub-header h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#subscription-overlay .sub-header button {
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+#subscription-overlay .sub-body {
+    padding: 16px 16px 100px;
+    overflow-y: auto;
+}
+
+#subscription-overlay .sub-intro {
+    color: #555;
+    margin-bottom: 12px;
+}
+
+#subscription-overlay .sub-plans {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+#subscription-overlay .sub-card {
+    background: #fff8d2;
+    border: 1px solid #ffe48a;
+    border-radius: 16px;
+    padding: 16px;
+    position: relative;
+}
+
+#subscription-overlay .sub-card.popular {
+    background: #fff4c0;
+    border-color: #ffd86a;
+}
+
+#subscription-overlay .sub-card .sub-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 11px;
+    background: #ffd86a;
+    padding: 4px 8px;
+    border-radius: 999px;
+    font-weight: 700;
+}
+
+#subscription-overlay .sub-title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#subscription-overlay .sub-price {
+    font-size: 26px;
+    font-weight: 800;
+    margin: 6px 0;
+}
+
+#subscription-overlay .sub-price span {
+    font-size: 12px;
+    color: #666;
+    font-weight: 600;
+}
+
+#subscription-overlay .sub-features {
+    margin: 8px 0 12px;
+    padding-left: 18px;
+}
+
+#subscription-overlay .sub-features li {
+    margin: 4px 0;
+}
+
+#subscription-overlay .choose-plan {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background: var(--color-pri);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#subscription-overlay .sub-fineprint {
+    font-size: 12px;
+    color: #777;
+    margin-top: 16px;
+}
+
+@media (min-width: 768px) {
+    #subscription-overlay .sub-plans {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

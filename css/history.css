@@ -1,0 +1,104 @@
+/* Create new file: css/history.css */
+
+#history-overlay {
+    position: fixed;
+    inset: 0;
+    background: #fff;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s ease;
+    -webkit-transition: opacity .2s ease;
+    -moz-transition: opacity .2s ease;
+    -ms-transition: opacity .2s ease;
+    -o-transition: opacity .2s ease;
+    overflow: auto;
+}
+
+#history-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#history-overlay.hidden {
+    display: block;
+}
+
+#history-overlay .overlay-header {
+    text-align: center;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 2;
+    padding: 20px;
+    color: #1f1f1f;
+}
+
+.history-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 20px;
+    padding: 20px 20px 100px 20px;
+}
+
+.history-item {
+    background: #FFF8D1;
+    border: 1px solid #FEC200;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.trip-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e8e7e7;
+}
+
+.trip-fare {
+    font-weight: 700;
+    color: #111;
+}
+
+.trip-status {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.trip-status.completed { color: var(--color-succ); }
+.trip-status.cancelled { color: var(--color-eror); }
+
+.trip-status::before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.trip-status.completed::before { background-color: var(--color-succ); }
+.trip-status.cancelled::before { background-color: var(--color-eror); }
+
+.history-item .overlay-addresses .row {
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: 20px;
+}

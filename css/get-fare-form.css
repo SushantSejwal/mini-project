@@ -1,0 +1,218 @@
+.get-ride-container {
+    margin: 20px 10px;
+    text-align: center;
+}
+
+.get-ride-container .heading {
+    font-size: 22px;
+    padding: 10px;
+    font-weight: 600;
+    
+}
+
+.get-ride-container .image-container {
+    margin: 30px 20px;
+}
+
+.get-ride-container .image-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.get-ride-container .location-inputs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.get-ride-container .location-inputs-container .location-input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.get-ride-container .location-inputs-container .location-input span {
+    position: absolute;
+    left: 10px;
+}
+
+.get-ride-container .location-inputs-container .location-input span i {
+    color: var(--color-grey);
+}
+
+.get-ride-container .location-inputs-container .location-input input {
+    font-size: 16px;
+    width: 100%;
+    padding: 18px 20px 18px 35px;
+    margin: 10px 0;
+    border: 2px solid var(--color-pri);
+    border-radius: 10px;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.get-ride-container .location-inputs-container .location-input input:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(254, 195, 0, 0.3);
+}
+
+.get-ride-container .location-inputs-container .location-input input::placeholder {
+    font-size: 16px;
+    color: var(--color-grey);
+}
+
+.datetime-input-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.datetime-input-container .datetime-input {
+    text-align: left;
+}
+
+.datetime-input-container .datetime-input input {
+    font-size: 16px;
+    padding: 18px;
+    width: 100%;
+    border: 2px solid var(--color-pri);
+    border-radius: 10px;
+    color: var(--color-grey);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.datetime-input-container .datetime-input input:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(254, 195, 0, 0.3);
+}
+
+.get-ride-container .submit-btn .submit {
+    padding: 15px 40px;
+    border-radius: 20px;
+    border: none;
+    margin: 20px;
+    font-size: 18px;
+    background: var(--color-pri);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+.get-ride-container .submit-btn .submit:hover {
+    background: #f0b800;
+}
+
+.get-ride-container .submit-btn .submit:active {
+    background: #e7b100;
+}
+
+.monthly-subscription-container {
+    background: var(--color-pri);
+    margin-top: 40px;
+    padding: 20px;
+    color: #1d1d1d;
+}
+
+.monthly-subscription-container .heading {
+    font-size: 35px;
+    font-weight: 700;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.monthly-subscription-container .description {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.monthly-subscription-container .description p {
+    padding: 10px 0;
+}
+
+.monthly-subscription-container .get-subscription {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 20px;
+    text-align: center;
+    background: #f6f5f3;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+    -webkit-transition: background 0.2s ease-in-out;
+    -moz-transition: background 0.2s ease-in-out;
+    -ms-transition: background 0.2s ease-in-out;
+    -o-transition: background 0.2s ease-in-out;
+    user-select: none;
+}
+
+.monthly-subscription-container .get-subscription:hover {
+    background: #f6ebcf;
+}
+
+.monthly-subscription-container .get-subscription:active {
+    background: #e1d2ac;
+}
+
+.monthly-subscription-container .image-container {
+    margin: 40px 20px;
+}
+
+.monthly-subscription-container .image-container img {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.location-input {
+    position: relative;
+}
+
+.list {
+    position: absolute;
+    top: calc(100%);
+    left: 30px;
+    right: 0;
+    background: #FFFBE6;
+    border: 1px solid var(--color-pri);
+    max-height: 40vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    z-index: 20;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.item {
+    padding: 12px 14px;
+    font-size: 16px;
+    line-height: 1.3;
+    cursor: pointer;
+}
+
+.item+.item {
+    border-top: 1px solid #f2f2f2;
+}
+
+.item:hover {
+    background: #fff8d2;
+}
+
+.item:active {
+    background: #fff3ba;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .datetime-input-container {
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
+}

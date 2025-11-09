@@ -1,0 +1,45 @@
+#map {
+    height: 400px;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.coords {
+    margin: 12px auto;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    width: 90%;
+    color: #333;
+}
+
+input[readonly] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #f9f9f9;
+    color: #444;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+}
+
+.leaflet-control-zoom.leaflet-bar.leaflet-control,
+.leaflet-control-attribution.leaflet-control {
+    visibility: hidden;
+}
+
+@media (max-width: 768px) {
+    #map {
+        height: 300px;
+        width: 95%;
+    }
+}
